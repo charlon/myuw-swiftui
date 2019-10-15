@@ -16,10 +16,24 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Hello World")
-                }.navigationBarTitle(Text("MyUW Native"))
+                WebView(request: URLRequest(url: URL(string: "https://developer.apple.com")!))
+            }.navigationBarTitle(Text("MyUW Native"))
         }
     }
+}
+
+struct WebView: UIViewRepresentable {
+    let request: URLRequest
+    
+    func makeUIView(context: Context) -> WKWebView {
+        return WKWebView()
+    }
+    
+    func updateUIView(_ uiView: WKWebView, context: Context) {
+        uiView.load(request)
+    }
+    
+    
 }
 
 #if DEBUG
