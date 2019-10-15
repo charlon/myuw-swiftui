@@ -15,9 +15,16 @@ import WebKit
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            VStack {
-                WebView(request: URLRequest(url: URL(string: "https://developer.apple.com")!))
-            }.navigationBarTitle(Text("MyUW Native"))
+            
+            // update top bar background color
+            
+            // remove bottom bar spacing
+            GeometryReader { geometry in
+                VStack {
+                    WebView(request: URLRequest(url: URL(string: "https://my-test.s.uw.edu")!))
+                }
+                .navigationBarTitle(Text("MyUW"))
+            }.edgesIgnoringSafeArea(.all)
         }
     }
 }
