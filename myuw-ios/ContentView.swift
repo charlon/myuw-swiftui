@@ -6,9 +6,6 @@
 //  Copyright © 2019 Charlon Palacay. All rights reserved.
 //
 
-// Follows this tutorial:
-// https://www.youtube.com/watch?v=5xvvfHNdB5c
-
 import SwiftUI
 import WebKit
 
@@ -16,8 +13,19 @@ struct ContentView: View {
     var body: some View {
         
         // update navigation background color
-        UINavigationBar.appearance().backgroundColor = .green
+        // https://sarunw.com/posts/uinavigationbar-changes-in-ios13/
         
+        let coloredAppearance = UINavigationBarAppearance()
+        coloredAppearance.configureWithOpaqueBackground()
+        coloredAppearance.backgroundColor = .systemPink
+        coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+               
+        UINavigationBar.appearance().standardAppearance = coloredAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
+        
+        // main navigation view using webview (youtube tutorial)
+        // https://www.youtube.com/watch?v=5xvvfHNdB5c
         return NavigationView {
             
             VStack {
