@@ -15,7 +15,7 @@
 		85A9755F23562819006CFE50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A9755D23562819006CFE50 /* LaunchScreen.storyboard */; };
 		85A9756A23562819006CFE50 /* myuw_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A9756923562819006CFE50 /* myuw_iosTests.swift */; };
 		85A9757523562819006CFE50 /* myuw_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A9757423562819006CFE50 /* myuw_iosUITests.swift */; };
-		85A9758323564C29006CFE50 /* MyUW.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85A9758223564C29006CFE50 /* MyUW.plist */; };
+		85A9758523564DD1006CFE50 /* MyUW.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85A9758423564DD1006CFE50 /* MyUW.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		85A9757023562819006CFE50 /* myuw-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "myuw-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A9757423562819006CFE50 /* myuw_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myuw_iosUITests.swift; sourceTree = "<group>"; };
 		85A9757623562819006CFE50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		85A9758223564C29006CFE50 /* MyUW.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MyUW.plist; sourceTree = "<group>"; };
+		85A9758423564DD1006CFE50 /* MyUW.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MyUW.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 				85A9755D23562819006CFE50 /* LaunchScreen.storyboard */,
 				85A9756023562819006CFE50 /* Info.plist */,
 				85A9755A23562819006CFE50 /* Preview Content */,
-				85A9758223564C29006CFE50 /* MyUW.plist */,
+				85A9758423564DD1006CFE50 /* MyUW.plist */,
 			);
 			path = "myuw-ios";
 			sourceTree = "<group>";
@@ -245,7 +245,7 @@
 			files = (
 				85A9755F23562819006CFE50 /* LaunchScreen.storyboard in Resources */,
 				85A9755C23562819006CFE50 /* Preview Assets.xcassets in Resources */,
-				85A9758323564C29006CFE50 /* MyUW.plist in Resources */,
+				85A9758523564DD1006CFE50 /* MyUW.plist in Resources */,
 				85A9755923562819006CFE50 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
