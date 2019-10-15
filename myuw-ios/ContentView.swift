@@ -6,7 +6,11 @@
 //  Copyright © 2019 Charlon Palacay. All rights reserved.
 //
 
+// Follows this tutorial:
+// https://www.youtube.com/watch?v=5xvvfHNdB5c
+
 import SwiftUI
+import WebKit
 
 struct ContentView: View {
     var body: some View {
