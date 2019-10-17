@@ -27,6 +27,8 @@ struct ProfileView: View {
 
 struct ContentView: View {
     
+     @State private var show_modal: Bool = false
+    
     var body: some View {
                 
         // update navigation background color
@@ -53,9 +55,14 @@ struct ContentView: View {
             .navigationBarTitle(Text("MyUW"))
             .navigationBarItems(trailing:
                 // navigation link control
+                /*
                 NavigationLink(destination: ProfileView()) {
                     Text("Profile").foregroundColor(.white)
                 }
+                */
+                Button(action: {
+                    self.show_modal = true
+                }) { Text("Profile").foregroundColor(.white) }.sheet(isPresented: self.$show_modal) { ProfileView() }
             )
             
         }
@@ -73,8 +80,6 @@ struct WebView: UIViewRepresentable {
     func updateUIView(_ uiView: WKWebView, context: Context) {
         uiView.load(request)
     }
-    
-    
 }
 
 #if DEBUG
